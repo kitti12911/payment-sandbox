@@ -1,0 +1,5 @@
+CHANGELOG.md
+.codex/
+.cursor/
+tmp/
+coverage.out
