@@ -1,0 +1,10 @@
+.git
+.github
+.vscode
+.air.toml
+.codex
+tmp
+coverage.out
+config.yml
+Dockerfile
+README.md
