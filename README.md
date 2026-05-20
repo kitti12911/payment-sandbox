@@ -11,8 +11,8 @@ Background worker service scaffolded by
 - Structured logging, OpenTelemetry tracing, and Pyroscope profiling, with
   trace propagation from publisher messages to the worker handler.
 - A `internal/worker` package with an example job payload and handler.
-- GitHub Actions and/or GitLab CI, Renovate, CODEOWNERS, golangci-lint,
-  markdownlint, Prettier, `.air.toml`, and a multi-stage `Dockerfile`.
+- GitHub Actions, Renovate, CODEOWNERS, golangci-lint, markdownlint,
+  Prettier, `.air.toml`, and a multi-stage `Dockerfile`.
 
 ## Getting started
 
