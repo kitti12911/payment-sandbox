@@ -70,7 +70,6 @@ jobs:
             - name: Test with coverage
               run: ./scripts/ci/go-test.sh
               env:
-                  GO_TEST_RACE: false
                   # Keep in sync with GO_COVERAGE_EXCLUDE_REGEX in the Makefile
                   # so local `make ci-test` and CI report the same %.
                   GO_COVERAGE_EXCLUDE_REGEX: "/cmd/"
