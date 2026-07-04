@@ -1,13 +1,13 @@
 module github.com/kitti12911/payment-sandbox
 
-go 1.26.3
+go 1.26.4
 
 require (
 	github.com/google/uuid v1.6.0
-	github.com/kitti12911/lib-async v1.5.2
-	github.com/kitti12911/lib-monitor v1.12.1
-	github.com/kitti12911/lib-orm/v3 v3.3.0
-	github.com/kitti12911/lib-util/v3 v3.15.1
+	github.com/kitti12911/lib-async v1.6.0
+	github.com/kitti12911/lib-monitor v1.13.0
+	github.com/kitti12911/lib-orm/v3 v3.5.0
+	github.com/kitti12911/lib-util/v3 v3.17.0
 	github.com/uptrace/bun v1.2.18
 )
 
