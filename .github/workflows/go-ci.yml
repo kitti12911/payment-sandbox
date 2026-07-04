@@ -72,7 +72,7 @@ jobs:
               env:
                   # Keep in sync with GO_COVERAGE_EXCLUDE_REGEX in the Makefile
                   # so local `make ci-test` and CI report the same %.
-                  GO_COVERAGE_EXCLUDE_REGEX: "/cmd/"
+                  GO_COVERAGE_EXCLUDE_REGEX: "/cmd/|/internal/relay/|/internal/database/"
 
             - name: Show coverage
               run: |

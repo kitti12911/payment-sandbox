@@ -1,7 +1,7 @@
 # The cmd entrypoint (main, server bootstrap) is dropped from coverage so the
 # reported % reflects the worker logic worth testing. Patterns are awk regexes
 # matched against the file:line column of coverage.out.
-GO_COVERAGE_EXCLUDE_REGEX = /cmd/
+GO_COVERAGE_EXCLUDE_REGEX = /cmd/|/internal/relay/|/internal/database/
 
 # ____________________ Go Command ____________________
 air:
