@@ -9,7 +9,7 @@ import (
 
 	"github.com/kitti12911/payment-sandbox/internal/config"
 
-	orm "github.com/kitti12911/lib-orm/v3"
+	orm "github.com/kitti12911/lib-orm/v4"
 )
 
 // New opens the payment database connection with models registered.
