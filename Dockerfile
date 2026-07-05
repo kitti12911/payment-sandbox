@@ -1,6 +1,6 @@
-# check=skip=InvalidDefaultArgInFrom
-ARG TOOLCHAIN_IMAGE
-FROM ${TOOLCHAIN_IMAGE} AS builder
+FROM golang:1.26.4-alpine@sha256:3ad57304ad93bbec8548a0437ad9e06a455660655d9af011d58b993f6f615648 AS builder
+
+RUN apk add --no-cache git
 
 WORKDIR /src
 
@@ -15,7 +15,7 @@ ARG TARGETARCH
 RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} \
 	go build -trimpath -ldflags="-s -w" -o /out/payment-sandbox ./cmd/server
 
-FROM alpine:3.22@sha256:310c62b5e7ca5b08167e4384c68db0fd2905dd9c7493756d356e893909057601
+FROM alpine:3.23@sha256:fd791d74b68913cbb027c6546007b3f0d3bc45125f797758156952bc2d6daf40
 
 RUN apk add --no-cache ca-certificates tzdata \
 	&& addgroup -S app \
